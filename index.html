@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
+
+    <!-- Author: Adrienne Garimbao -->
+      <meta name="author" content="Adrienne Garimbao">
+      <meta name="designer" content="Adrienne Garimbao">
+    <!-- Author: Adrienne Garimbao -->
+
+    <!-- Desciption: Surver Form Project -->
+      <meta name="description" content="Survey Form using CSS HTML">
+      <meta name="keywords" content="Survey Form CSS HTML">
+    <!-- Desciption: Resume -->
+
+    <!-- === COMPONENT DIRECTORY === -->
+    
+      <!-- CSS -->
+        <link rel="stylesheet" href="./assets/styles.css">
+      <!-- CSS -->
+
+    <!-- === COMPONENT DIRECTORY === -->
+
+</head>
+  <body>
+
+    <!-- === FORM BOX === -->
+    <div class="container">
+
+      <!-- === HEADER === -->
+      <header class="header">
+        <h1 id="title" class="text-center">Survey Form</h1>
+        <p id="description" class="description text-center">
+          Made by Adrienne Garimbao
+        </p>
+      </header>
+      <!-- === HEADER === -->
+
+      <!-- === SURVEY BOX === -->
+      <form id="survey-form">
+
+        <!-- === NAME === -->
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <!-- === NAME === -->
+
+        <!-- === SEX === -->
+        <label>Sex</label>
+        <label><input type="radio" name="radio-group" value="male">Male</label>
+        <label><input type="radio" name="radio-group" value="female">Female</label>
+        <!-- === SEX === -->
+
+        <!-- === EMAIL === -->
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <!-- === EMAIL === -->
+
+        <!-- === NUMBER === -->
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Phone Number<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="0"
+            max="100"
+            class="form-control"
+            placeholder="Enter a number"
+          />
+        </div>
+        <!-- === NUMBER === -->
+
+        <!-- === ROLE === -->
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <!-- === ROLE === -->
+
+        <!-- === FEEDBACK === -->
+        <div class="form-group">
+
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label>
+            <input
+              name="checkbox-group" 
+              value="front-end-dev"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Front-end Projects
+          </label>
+
+          <label>
+            <input
+              name="checkbox-group" 
+              value="back-end-dev"
+              type="checkbox"
+              class="input-checkbox"
+            />Back-end Projects</label
+          >
+          
+        </div>
+        <!-- === FEEDBACK === -->
+
+        <!-- === COMMENTS === -->
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Additional comments"
+          ></textarea>
+        </div>
+        <!-- === COMMENTS === -->
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+
+      </form>
+      <!-- === SURVEY BOX === -->
+
+
+    </div>
+    <!-- === FORM BOX === -->
+
+  </body>
+</html>

@@ -1,4 +1,4 @@
-## HTML CSS Resume
+## Build a Survey Form using HTML CSS
 
 ### Made with ❤️ by Adrienne Garimbao
 
